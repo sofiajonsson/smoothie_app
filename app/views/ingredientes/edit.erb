@@ -1,0 +1,11 @@
+<h2>Edit Ingredient</h2>
+
+<label> Ingredient Name:</label>
+<%= form_tag ingredientes_path do %>
+<%= text_field_tag :"ingredient[name]" %> <br>
+<label> Ingredient Price:</label>
+<%= text_field_tag :"ingredient[price]" %> <br>
+<label>Smoothies in:</label>
+<%= select_tag "smoothies", options_from_collection_for_select(@smoothies, 'id', "name") %> <br>
+<%= submit_tag "Submit" %>
+<% end %>

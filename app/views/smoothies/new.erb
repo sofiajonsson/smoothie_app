@@ -1,0 +1,9 @@
+<h2>New Smoothie</h2>
+
+<label> Smoothie Name:</label>
+<%= form_tag smoothies_path do %>
+<%= text_field_tag :"smoothie[name]" %> <br>
+<label> Smoothie Price:</label>
+<%= text_field_tag :"smoothie[price]" %> <br>
+<%= submit_tag "Submit" %>
+<% end %>
